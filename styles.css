@@ -1,3 +1,4 @@
+
 html,
 body {
   height: 100%;
@@ -5,12 +6,31 @@ body {
   font-family: roboto, sans-serif;
   line-height: 164%;
   background-color: #F9F9F9;
+  
 }
 
 .container {
-	max-width: 1120px;
-	margin: 0 auto;
-	padding: 0 400px;
+	width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 calc((100vw - 1920px) / 2);
+    box-sizing: border-box;
+
+    @media (max-width: 1200px) {
+        padding: 0 200px;
+    }
+
+    @media (max-width: 800px) {
+        padding: 0 100px;
+    }
+     
+    @media (max-width: 545px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: 420px) {
+        padding: 0 30px;
+    }
 }
 
 a {
@@ -26,6 +46,10 @@ p {
 h2 {
     font-size: 32px;
     margin: 0;
+
+    @media (max-width: 800px) {
+        font-size: 28px;
+    }
 }
 
 h3 {
@@ -34,6 +58,10 @@ h3 {
     font-weight: 500;
     color: rgba(255, 255, 255, 1);
     margin: 0;
+
+    @media (max-width: 545px) {
+        font-size: 18px;
+    }
 }
 
 .wrapper {
@@ -42,6 +70,7 @@ h3 {
     min-height: 100vh;
 	min-width: 375px;
 	position: relative;
+    overflow: hidden;
 }
 
 /* Header */
@@ -53,6 +82,15 @@ h3 {
     list-style: none;
     padding: 0;
     top: 80px;
+
+    @media (max-width: 800px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 545px) {
+        gap: 15px;
+    }
+
 }
 
 /* Hero-section */
@@ -60,18 +98,40 @@ h3 {
 .hero-section {
     background: #EEEFF1;
     padding-top: 258px;
+
+    @media (max-width: 545px) {
+        padding-top: 200px; 
+    }
 }
 
 .hero-title {
     font-size: 48px;
     margin: 0;
     padding-bottom: 60px;
+
+    @media (max-width: 800px) {
+        font-size: 38px;
+        padding-bottom: 40px;
+    }
 }
 
 .hero-text {
     padding-bottom: 65px;
     width: 540px;
     color: #727272;
+
+    @media (max-width: 800px) {
+        width: 360px;
+    }
+
+    @media (max-width: 545px) {
+        width: 320px; 
+        padding-bottom: 45px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 14px;
+    }
 }
 
 .hero-btn {
@@ -83,10 +143,25 @@ h3 {
     text-align: center;
     align-content: center;
     letter-spacing: 2px;
+
+    @media (max-width: 800px) {
+        width: 205px;
+        height: 55px;
+    }
+
+    @media (max-width: 420px) {
+        width: 185px;
+        height: 45px;
+        font-size: 14px;
+    }
 }
 
 .hero-box {
     padding-bottom: 141px;
+
+    @media (max-width: 545px) {
+        padding-bottom: 100px;
+    }
 }
 
 /* about-section */
@@ -101,6 +176,14 @@ h3 {
 .about-title {
     padding: 112px 0 50px 0;
     margin: 0;
+
+    @media (max-width: 800px) {
+        padding: 82px 0 40px 0;
+    }
+
+    @media (max-width: 420px) {
+        padding: 72px 0 30px 0;
+    }
 }
 
 .about-text {
@@ -108,6 +191,23 @@ h3 {
     align-items: center;
     width: 540px;
     padding-bottom: 100px;
+
+    @media (max-width: 800px) {
+        width: 440px;
+        padding-bottom: 70px;
+    }
+
+    @media (max-width: 545px) {
+        width: 380px;
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 14px;
+        width: 320px;
+        padding-bottom: 50px;
+    }
+
 }
 
 /* projects-section */
@@ -126,6 +226,7 @@ h3 {
     list-style: none;
     padding: 100px 0;
     margin: 0;
+    justify-content: center;
 }
 
 .project-list__cell {
@@ -145,6 +246,18 @@ h3 {
 
 .education-title {
     padding: 100px 0 50px 0;
+
+    @media (max-width: 800px) {
+        padding: 80px 0 40px 0;
+    }
+
+    @media (max-width: 5450px) {
+        padding: 72px 0 35px 0;
+    }
+
+    @media (max-width: 420px) {
+        padding: 62px 0 30px 0;
+    }
 }
 
 .education-text {
@@ -152,10 +265,51 @@ h3 {
     color: #727272;
     align-items: center;
     padding-bottom: 57px;
+
+    @media (max-width: 800px) {
+        width: 440px;
+        padding-bottom: 45px;
+    }
+
+    @media (max-width: 545px) {
+        width: 380px;
+    }
+
+    @media (max-width: 420px) {
+        width: 320px;
+    }
 }
 
 .education-video {
+    width: 1100px;
+    height: 600px;
     padding-bottom: 100px;
+
+    @media (max-width: 1200px) {
+        width: 900px;
+        height: 500px;
+        padding-bottom: 80px;
+    }
+
+     @media (max-width: 1000px) {
+        width: 750px;
+    }
+
+    @media (max-width: 800px) {
+        width: 500px;
+        height: 350px;
+    }
+
+    @media (max-width: 545px) {
+        width: 400px;
+        height: 300px;
+    }
+
+    @media (max-width: 420px) {
+        width: 325px;
+        height: 250px;
+
+    }
 }
 
 /* Footer section */
