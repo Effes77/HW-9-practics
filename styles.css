@@ -266,7 +266,7 @@ h3 {
 
 .projects-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 147px);
+    grid-template-columns: repeat(6, 147px);
     grid-auto-flow: row;
     gap: 40px;
     list-style: none;
@@ -277,20 +277,20 @@ h3 {
 
     @media (max-width: 1200px) {
         .projects-list {
-        grid-template-columns: repeat(3, 147px);
-    }
+            grid-template-columns: repeat(3, 147px);
+        }
     }
 
     @media (max-width: 800px) {
         .projects-list {
-        grid-template-columns: repeat(2, 147px);
-        justify-items: center;
+            grid-template-columns: repeat(2, 147px);
+            justify-items: center;
         }
     }
 
     @media (max-width: 420px) {
         .projects-list {
-        grid-template-columns: repeat(1, 147px);
+            grid-template-columns: repeat(1, 147px);
         }
     }
 
