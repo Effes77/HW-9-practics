@@ -11,25 +11,25 @@ body {
 
 .container {
 	width: 100%;
-    max-width: 1120px;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 0 calc((100vw - 1920px) / 2);
+    padding: 0 400px;
     box-sizing: border-box;
 }
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1620px) {
             .container {
                 padding: 0 200px;
             }
         }
     
-        @media (max-width: 800px) {
+        @media (max-width: 1200px) {
             .container {
                 padding: 0 100px;
             }
         }
     
-        @media (max-width: 545px) {
+        @media (max-width: 800px) {
             .container {
                 padding: 0 50px;
             }
