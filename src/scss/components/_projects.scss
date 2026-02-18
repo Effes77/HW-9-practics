@@ -1,0 +1,40 @@
+.projects-section {
+    background-color: #34547A;
+    color: #FFFFFF;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(6, 147px);
+    grid-auto-flow: row;
+    gap: 40px;
+    list-style: none;
+    padding: 100px 0;
+    margin: 0;
+    justify-content: center;
+}
+
+    @media (max-width: 1200px) {
+        .projects-list {
+            grid-template-columns: repeat(3, 147px);
+        }
+    }
+
+    @media (max-width: 800px) {
+        .projects-list {
+            grid-template-columns: repeat(2, 147px);
+            justify-items: center;
+        }
+    }
+
+    @media (max-width: 420px) {
+        .projects-list {
+            grid-template-columns: repeat(1, 147px);
+        }
+    }
+
+.project-list__cell {
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    gap: 20px;
+}
