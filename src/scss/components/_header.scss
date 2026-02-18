@@ -1,20 +1,20 @@
-.nav-list {
+.header {
+
+    &__nav-list {
     position: absolute;
     display: flex;
     gap: 40px;
     list-style: none;
     padding: 0;
     top: 80px;
-}
 
         @media (max-width: 800px) {
-            .nav-list {
-                gap: 20px;
-            }
+            gap: 20px;
         }
     
         @media (max-width: 545px) {
-            .nav-list {
-                gap: 15px;
-            }
+            gap: 15px;
         }
+    }
+}
+
