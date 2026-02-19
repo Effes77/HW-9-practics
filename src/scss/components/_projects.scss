@@ -1,6 +1,6 @@
 .projects-section {
-    background-color: #34547A;
-    color: #FFFFFF;
+    background-color: $base-secondary-color;
+    color: $second-fn-color;
 
     &__list {
         display: grid;

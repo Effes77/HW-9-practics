@@ -1,6 +1,6 @@
 .footer {
-    background-color: #34547A;
-    color: rgba(255, 255, 255, 1);
+    background-color: $base-secondary-color;
+    color: $second-fn-color;
 
     &__title {
         margin: 0;

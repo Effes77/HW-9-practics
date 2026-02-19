@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: roboto, sans-serif;
   line-height: 164%;
-  background-color: #F9F9F9;
+  background-color: $main-bg-color;
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: $base-fn-color;
     margin: 0;
 }
 
@@ -54,7 +54,7 @@ h3 {
     font-size: 21px;
     line-height: 100%;
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
+    color: $second-color;
     margin: 0;
 
     @media (max-width: 545px) {
